@@ -1,0 +1,275 @@
+:root {
+  --dark-blue: #0B0D17;
+  --light-blue: #D0D6F9;
+
+  --nav-font: "Barlow Condensed", sans-serif;
+  --text-font: "Barlow", sans-serif;
+}
+
+.container {
+  height: calc(100vh - 136px);
+  min-height: 900px;
+  max-height: 1360px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  position: relative;
+  
+  h2 span {
+    font-family: var(--nav-font);
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 4.7px;
+    margin-right: 24px;
+    color: rgba(255, 255, 255, 0.25);
+  }
+  
+  h2 {
+    letter-spacing: 4px;
+    margin-bottom: 24px;
+    font-family: var(--nav-font);
+    font-size: 28px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+
+}
+.container:has(span[data-count="0"].active) .img-0 {
+  opacity: 1;
+  visibility: visible;
+}
+.container:has(span[data-count="1"].active) .img-1 { 
+  opacity: 1;
+  visibility: visible;
+}
+.container:has(span[data-count="2"].active) .img-2 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.content {
+  height: 96%;
+  display: flex;
+  gap: 32px;
+}
+.content:has(span[data-count="0"].active) .des-0 {
+  opacity: 1;
+  visibility: visible;
+}
+.content:has(span[data-count="1"].active) .des-1 {
+  opacity: 1;
+  visibility: visible;
+}
+.content:has(span[data-count="2"].active) .des-2 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.image-box {
+  width: 50%;
+  position: relative;
+
+  img {
+    position: absolute;
+    transition: .7s;
+    visibility: hidden;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 530px;
+    mask: linear-gradient(to bottom, white 70%, transparent);
+    max-height: 100%;
+    object-fit: contain;
+  }
+}
+
+.holder {
+  position: relative;
+  width: 50%;
+}
+
+.description {
+  position: absolute;
+  max-width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: .7s;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  p:first-of-type {
+    color: white;
+    opacity: .5;
+    font-size: 32px;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 56px;
+    color: white;
+    margin: 16px 0 24px;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+
+  p:last-of-type {
+    color: var(--light-blue);
+    font-size: 18px;
+    line-height: 180%;
+    font-family: var(--text-font);
+    max-width: 600px;
+  }
+}
+
+.tabs {
+  position: absolute;
+  bottom: 48px;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  span {
+    transition: .3s;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    cursor: pointer;
+    width: 15px;
+    background-color: white;
+    opacity: 20%;
+
+    &:not(.active):hover {
+      opacity: .5;
+    }
+    &.active {
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    height: fit-content;
+    min-height: calc(100vh - 96px);
+    padding: 40px;
+    padding-bottom: 0;
+    overflow-y: hidden;
+    
+    h2 span {
+      font-size: 20px;
+      letter-spacing: 3px;
+    }
+    
+    h2 {
+      letter-spacing: 3px;
+      margin-bottom: 24px;
+      font-size: 20px;
+    }
+
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .image-box {
+    width: 100%;
+    height: 500px;
+  
+    img {
+      position: absolute;
+      transition: .7s;
+      visibility: hidden;
+      opacity: 0;
+      top: 100%;
+      transform: translate(-50%, -90%);
+      width: 100%;
+      max-width: 440px;
+      mask: unset;
+    }
+  }
+
+  .holder {
+    width: 100%;
+    min-height: 310px;
+  }
+
+  .description {
+    width: 100%;
+    text-align: center;
+  
+    p:first-of-type {
+      font-size: 24px;
+    }
+  
+    h3 {
+      font-size: 40px;
+    }
+  
+    p:last-of-type {
+      font-size: 16px;
+      margin: 0 auto;
+    }
+  }
+  
+  .tabs {
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    gap: 16px;
+  
+    span {
+      width: 10px;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    min-height: calc(100vh - 88px);
+    padding: 24px;
+    
+    h2 span {
+      font-size: 16px;
+      letter-spacing: 2.5px;
+    }
+    
+    h2 {
+      text-align: center;
+      font-size: 16px;
+      letter-spacing: 2.5px;
+    }
+
+  }
+
+  .image-box {
+    height: 380px;
+  
+    img {
+      transform: translate(-50%, -100%);
+      mask: linear-gradient(to bottom, white 70%, transparent);
+    }
+  }
+
+  .holder {
+    min-height: 320px;
+  }
+
+  .description {
+    p:first-of-type {
+      font-size: 18px;
+    }
+  
+    h3 {
+      font-size: 24px;
+      margin: 8px 0 24px;
+    }
+  
+    p:last-of-type {
+      font-size: 15px;
+    }
+  }
+}

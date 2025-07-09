@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/destinations.css">
+  <title>Space tourism</title>
+</head>
+<style>
+  @media (max-width: 600px) {
+    body {
+      background-image: url("./assets/destination/background-destination-mobile.jpg");
+    }
+  }
+  @media (min-width: 601px){
+    body {
+      background-image: url("./assets/destination/background-destination-tablet.jpg");
+    }
+  }
+  @media (min-width: 992px) {
+    body {
+      background-image: url("./assets/destination/background-destination-desktop.jpg");
+    }
+  }
+</style>
+<body>
+
+  <!-- header -->
+  <header>
+    <div class="logo-container">
+      <a class="logo" href="index.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      <span class="line"></span>
+    </div>
+    <nav>
+      <a href="index.html"><span>00</span>home</a>
+      <a class="active"><span>01</span>destinations</a>
+      <a href="./crew.html"><span>02</span>crew</a>
+      <a href="./tech.html"><span>03</span>technology</a>
+    </nav>
+    <div class="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2><span>01</span> pick you destination</h2>
+
+    <!-- destinations -->
+    <div class="destinations">
+      <div class="image-box">
+        <img class="img-0" src="./assets/destination/image-moon.png" alt="moon">
+        <img class="img-1" src="./assets/destination/image-mars.png" alt="moon">
+        <img class="img-2" src="./assets/destination/image-europa.png" alt="moon">
+        <img class="img-3" src="./assets/destination/image-titan.png" alt="moon">
+      </div>
+      <div class="content">
+        <div class="tabs">
+          <span class="active" data-count="0">moon</span>
+          <span data-count="1">mars</span>
+          <span data-count="2">europa</span>
+          <span data-count="3">titan</span>
+        </div>
+        <div class="des-0 destination">
+          <h3>moon</h3>
+          <p class="des">
+            See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain 
+            perspective and come back refreshed. 
+            While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+          </p>
+          <div class="info">
+            <div>
+              <span>avg. distance</span>
+              <p>384,400 km</p>
+            </div>
+            <div>
+              <span>est. travel time</span>
+              <p>3 days</p>
+            </div>
+          </div>
+        </div>
+        <div class="des-1 destination">
+          <h3>mars</h3>
+          <p class="des">
+            Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!
+          </p>
+          <div class="info">
+            <div>
+              <span>avg. distance</span>
+              <p>225 mil. km</p>
+            </div>
+            <div>
+              <span>est. travel time</span>
+              <p>9 months</p>
+            </div>
+          </div>
+        </div>
+        <div class="des-2 destination">
+          <h3>europa</h3>
+          <p class="des">
+            The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.
+          </p>
+          <div class="info">
+            <div>
+              <span>avg. distance</span>
+              <p>628 mil. km</p>
+            </div>
+            <div>
+              <span>est. travel time</span>
+              <p>3 years</p>
+            </div>
+          </div>
+        </div>
+        <div class="des-3 destination">
+          <h3>titan</h3>
+          <p class="des">
+            The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.
+          </p>
+          <div class="info">
+            <div>
+              <span>avg. distance</span>
+              <p>1.6 bil. km</p>
+            </div>
+            <div>
+              <span>est. travel time</span>
+              <p>7 years</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+</html>

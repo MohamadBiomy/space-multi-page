@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/tech.css">
+  <title>Space tourism</title>
+</head>
+<style>
+  @media (max-width: 600px) {
+    body {
+      background-image: url("./assets/technology/background-technology-mobile.jpg");
+    }
+  }
+  @media (min-width: 601px){
+    body {
+      background-image: url("./assets/technology/background-technology-tablet.jpg");
+    }
+  }
+  @media (min-width: 992px) {
+    body {
+      background-image: url("./assets/technology/background-technology-desktop.jpg");
+    }
+  }
+</style>
+<body>
+
+  <!-- header -->
+  <header>
+    <div class="logo-container">
+      <a class="logo" href="./index.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      <span class="line"></span>
+    </div>
+    <nav>
+      <a href="./index.html"><span>00</span>home</a>
+      <a href="./destinations.html"><span>01</span>destinations</a>
+      <a href="./crew.html"><span>02</span>crew</a>
+      <a class="active"><span>03</span>technology</a>
+    </nav>
+    <div class="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2><span>03</span>space launch 101</h2>
+
+    <!-- content -->
+    <div class="content">
+
+      <!-- holder -->
+      <div class="holder">
+        <!-- tabs -->
+        <div class="tabs">
+          <span data-count="0" class="active">1</span>
+          <span data-count="1">2</span>
+          <span data-count="2">3</span>
+        </div>
+
+        <!-- descriptions -->
+        <div class="descriptions">
+          <div class="description des-0">
+            <p>The terminology...</p>
+            <h3>Launch vehicle</h3>
+            <p>
+              A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+              payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X 
+              carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite 
+              an awe-inspiring sight on the launch pad!
+            </p>
+          </div>
+          <div class="description des-1">
+            <p>The terminology...</p>
+            <h3>Spaceport</h3>
+            <p>
+              A spaceport or cosmodrome is a site for launching (or receiving) 
+              spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, 
+              our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.
+            </p>
+          </div>
+          <div class="description des-2">
+            <p>The terminology...</p>
+            <h3>Space capsule</h3>
+            <p>
+              A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to 
+              reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your 
+              time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- image -->
+      <div class="image-box">
+        <!-- img will be inserted as a background -->
+      </div>
+
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

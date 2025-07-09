@@ -1,0 +1,5 @@
+- colors
+- text
+  fontfamily
+  fontsize
+
