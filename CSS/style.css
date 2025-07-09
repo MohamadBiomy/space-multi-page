@@ -324,6 +324,7 @@ nav {
     width: 272px;
     transition: .3s;
     color: var(--dark-blue);
+    background-color: white;
 
     &:hover {
       color: rgba(11, 13, 23, 0.5);
